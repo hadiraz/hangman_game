@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-body{
+    display: flex;
+    width: 100%;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.letters-container{
+    display:flex;
+    flex-flow:row wrap;
+    width: 90%;
+    justify-content: center;
+}
+.letters{
+    width: 35px;
+    height: 35px;
+    border:1px solid #696969;
+    margin: 0.2em 0.5em;
+    cursor: pointer;
+    line-height:35px ;
+    text-align: center;
+    color: green;
+    transition: 0.2s;
+}
+.letters:hover{
+    background-color: green;
+    color:#fff;
+}
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:2rem ;
+    text-align: center;
+}
+.guessed-letters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.letter-box{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin: 20px 0;
+}
+.letter-up{
+    margin: 2px 0;
+    line-height: 0;
+}
+.letter-under{
+    margin: 0em 0.2em;
+    line-height: 5px;
+}
+.used-letter{
+    background-color: #cccccc;
+    color: #fff;
+}
+h1{
+    margin-bottom: 50px;
+}
